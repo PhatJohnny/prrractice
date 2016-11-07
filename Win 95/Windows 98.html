@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="W98.css" type="text/css">
+<meta charset="utf-8">
+<title>Windows 98</title>
+
+<script type="text/javascript">
+   
+function startTime() {
+    var today = new Date();
+    var hh = today.getHours();
+    var m = today.getMinutes();
+	var h = hh;
+    // add a zero in front of numbers<10
+    m = checkTime(m);
+ 
+
+    var suffix;        
+    if (hh >= 12 && hh < 24){
+        suffix = "PM";
+    } else {
+        suffix = "AM";
+    }    
+    document.getElementById('txt').innerHTML = hh + ":" + m + " " + suffix;
+
+    t = setTimeout(function () {
+        startTime()
+    }, 500);
+	
+	if (h >= 12) {
+        h = hh-12;
+	}
+	
+	if (h == 0) {
+        h = 12;
+    }
+}
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
+
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=600,height=400,scrollbars=no');
+return false;
+}
+
+function showDiv() {
+   document.getElementById('ulul').style.display = "block";
+}
+
+function hideDiv() {
+	document.getElementById('ulul').style.display = "none";
+}
+</script>
+
+</head>
+
+<body onload="setInterval('startTime()', 200);">
+	<div id="clear"  onclick="hideDiv()">
+    <aside>
+    	<a
+   HREF="myComputer.html" 
+   onClick="return popup(this, 'notes')"><img id="computer" src="My Computer.PNG" height="80px" alt="mycomputer"></a>
+        <br>
+        <a href="https://myspace.com/"><img src="Network Neighborhood.PNG" height="95px" alt="networkneighborhood"></a>
+    </aside>
+    
+    <section>
+    	<img src="Swoosh.png" id="swoosh" height="100px" alt="logo">
+    </section>
+</div>
+    <footer>
+    	<ul>
+        	<a href="#"><li id="li1" onclick="showDiv()"><img id="start" src="Start.png" height="22px" alt="smalllogo"> Start
+            
+            	<ul id="ulul">
+            		<li><img src="WindowsPic.PNG" alt="butt" height="520"><a
+   HREF="Startmenu.html" 
+   onClick="return popup(this, 'notes')"><img alt="plc" src="placeholder.JPG" height="507"></a></li>
+           		</ul>
+            
+            </li></a>
+           <a href="http://www.opropagador.com/wp-content/uploads/2015/08/Internet-Explorer-Windows-98.png"><img src="IE.png" height="19"></a>
+           <a href="dance.html"><img src="carl.PNG" height="19"></a>
+            &nbsp;
+            <li id="li2"><p id="txt"></p></li>
+        </ul>
+    </footer>
+</body>
+    
+    
+</html>

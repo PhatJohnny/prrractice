@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+
+body, ul, li {
+	width:1677px;
+	height:1000px;
+	background-size:2000px;
+	font-family: 'Rock Salt';
+	align-content:center;
+	background-position:center;
+	align-content:center;
+}
+
+h2 {
+	padding:auto;
+	margin:auto;
+}
+
+ul {
+	margin:auto;
+	padding:inherit;
+	height:auto;
+	margin-left:420px
+}
+
+main {
+	width:auto;
+	margin:auto;
+	padding:auto;
+	background-position:center;
+	background-size:2000px;
+	height:2000px;
+	background-color:#FFE8E8;
+	align-content:center;
+}
+/* yeah yeah yeah */
+header {
+	background-color:#4471A2;
+	width:1677px;
+	
+	height:80px;
+	background-image:url(images/CloudyHeader.jpg);
+	text-align:center;
+}
+
+li {
+	display:inline-table;
+	width:278px;
+	height:auto;
+	text-align:center;
+	background-color:#FFFFFF;
+}
+
+li:hover {
+	background-color:#A583BD;
+}
+
+nav {
+	background-color:#DF9B9C;
+	width:750px;
+	margin:auto;
+	text-align:center
+	height:30px
+	background-color:#EFC100
+	border-top:#00DDF8 solid 4px;
+	float:left;
+}
+
+nav a {
+	display:block;
+}
+
+section {
+	background-color:#D4595B;
+	width:167px
+	margin-left:420px
+	float:right;
+	text-align:center;
+	height:50px;
+}
+
+article {
+	background-color:#FF4346;
+	width:830px
+	margin:auto;
+	float:top;
+	text-align:center;
+	height:80px
+	padding:auto;
+}
+
+aside {
+	background-color:#E30003;
+	width:418px;
+	margin:auto;
+	float:right;
+	height:30px
+	marquee-style:slide;
+	border:medium;
+	border:#550001;
+	padding:8px;
+}
+
+footer {
+	background-color:#FF6B6D;
+	width:80px;
+	margin:auto;
+	float:top;
+	float:left;
+	height:80px;
+	text-align:center;
+}
+
+a:link {
+	text-decoration:none;
+	color:#000000;
+}
+
+a:hover {
+	color:#E87300;
+	text-decoration:inherit;
+}
+
+main {
+	padding:auto;
+}
+
+input {
+	width:150px;
+	
+}
+
+.input_text {
+	margin-left:200px;
+	width:150px;
+}
+
+label {
+	float:left;
+	width:100px;
+}
+
+
+input:required:invalid {
+	border:3px red solid;
+}
+
+.tagalong {
+	display:none;
+}
+
+
+
+

@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+a {
+	text-decoration:none;
+	text-emphasis:none;	
+}
+
+aside {
+	float:left;	
+}
+
+body {
+	background-color:#0C00AB;	
+}
+
+#clear {
+	position: fixed;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.0001);
+}
+
+footer {
+	background-color:#D2D2D2;
+	border:inset;	
+	bottom:0;
+	height:25px;
+	margin:0px;
+	margin-bottom:0px;
+	margin-left:-10px;
+	position:fixed;
+	width:100%;
+}
+
+#myComp {
+		background-color:#FFFFFF;
+		display:none;
+		float:none;
+}
+
+#li1 {
+	border:outset 2px;
+	border-color:#DFDFDF;
+	display:inline-table;
+	font-size:18px;
+	height:25px;
+	margin:auto;
+	padding-bottom:20px;
+	width:80px;
+}
+
+#li1:on-click > #ulul {
+		display:block;
+}
+
+#li2 {
+	background:#C0C0C0;
+	border:2px inset #D2D2D2;
+	float:right;	
+	
+	position:relative;
+	
+	display:inline-table;
+	font-size:18px;
+	height:25px;
+	margin:auto;
+	padding-bottom:5px;
+	width:80px;
+}
+
+section {
+	height:200px;
+	float:right;	
+}
+
+#swoosh {
+	float:right;
+	margin-right:100px;
+	margin-top:20px;
+}
+
+#txt {
+	bottom:-10px;
+	font:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size:16px;
+	position:absolute;
+	right:1px;
+}
+
+ul {
+	margin:auto;
+	margin-left:2px;
+	list-style:none;
+	padding:inherit;
+	position:relative;
+}
+
+#ulul {
+	background:#D2D2D2;
+	border:outset 3px;
+	bottom:50px;	
+	display:none;
+	height:500px;
+	left:-5px;
+	position:absolute;
+	width:350px;
+}
